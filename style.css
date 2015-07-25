@@ -1,0 +1,18 @@
+.introbkg img {
+	position: relative;
+}
+
+.intrologo img {
+	top: 200px;
+	width: auto;
+	height: auto;
+}
+
+.introtxt h1 {
+	z-index: 100;
+	font-family: "century gothic";
+	color : #f9cf1c;
+	position: absolute;
+	top: 200px;
+}
+.
