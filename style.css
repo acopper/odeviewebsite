@@ -1,18 +1,24 @@
 .introbkg img {
 	position: relative;
-}
-
-.intrologo img {
-	top: 200px;
-	width: auto;
-	height: auto;
-}
+	z-index: 0
+} /* Est-ce  qu'il faudrait pas dimmentionner par rapport à la taille de l'écran ? */
 
 .introtxt h1 {
-	z-index: 100;
+	z-index: 2;
+	position: absolute;
 	font-family: "century gothic";
 	color : #f9cf1c;
-	position: absolute;
 	top: 200px;
-}
+}  /* J'aimerais centrer le texte mais j'ai pas encore trouvé comment faire .. */
+
+.intrologo img {
+	z-index: 1;
+	position: absolute;
+	top: 280px;
+	width: 500px;
+	height: 500px;
+	left: 500px;
+} /* Logo ODV, j'ai mis une taille en pixels mais il faudrait qu'elle soit proportionelle à la taille de l'écran (PC vs phone)
+      Je l'ai mis dans une div différente pour que l'on puisse le faire bouger par rapport au fond bleu quand on descend la page vers le bas, comme ça il est indépendant*/
+
 .
