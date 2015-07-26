@@ -1,24 +1,33 @@
-.introbkg img {
-	position: relative;
-	z-index: 0
-} /* Est-ce  qu'il faudrait pas dimmentionner par rapport à la taille de l'écran ? */
+body {
+	background-color: #09074b;
+}
 
-.introtxt h1 {
+/* #introbkg {
+  height: 700px;
+  background-image: url('./images/background.png');
+  background-size: cover;
+  border: 2px solid yellow;
+} 
+background, mais fonctionne moins bien qu'en mettant tout dans le html*/
+
+#introtxt h1 {
 	z-index: 2;
 	position: absolute;
 	font-family: "century gothic";
 	color : #f9cf1c;
-	top: 200px;
+	top: 100px;
+	text-align: center;	
 }  /* J'aimerais centrer le texte mais j'ai pas encore trouvé comment faire .. */
 
-.intrologo img {
-	z-index: 1;
-	position: absolute;
-	top: 280px;
-	width: 500px;
-	height: 500px;
-	left: 500px;
+#intrologo {
+	z-index: 3;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 300px;
+	height: 300px;
 } /* Logo ODV, j'ai mis une taille en pixels mais il faudrait qu'elle soit proportionelle à la taille de l'écran (PC vs phone)
-      Je l'ai mis dans une div différente pour que l'on puisse le faire bouger par rapport au fond bleu quand on descend la page vers le bas, comme ça il est indépendant*/
+      L'idée serait que le logo puisse bouger vers le haut lorsque l'on descend la page pour arriver sur le navbar - il faudrait que le logo soit mobile*/
 
 .
